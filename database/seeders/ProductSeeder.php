@@ -19,7 +19,7 @@ class ProductSeeder extends Seeder
         	'price'=>'25000',
         	'description'=>'A Smart Phone with 124gb ram and much more features',
         	'category'=>'Mobile',
-        	'gallery'=>'https://cdn.imgbin.com/10/9/18/imgbin-android-lg-electronics-oneplus-3t-smartphone-android-qV1UQEcJZrmVHMVqMXscHRDpU.jpg'
+        	'gallery'=>'C:\Users\Public\Pictures\Sample Pictures\Desert'
     ],
     [
     	'name'=>'LG Mobile',
