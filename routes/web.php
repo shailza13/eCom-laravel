@@ -21,4 +21,6 @@ Route::post('/login',[UserController::class,'login']);
 Route::get('/',[ProductController::class,'index']);
 //Route for product detail page
 Route::get('detail/{id}',[ProductController::class,'detail']);
+//Search Product
+Route::get('search',[ProductController::class,'search']);
 
