@@ -18,9 +18,15 @@ Route::get('/login', function () {
     return view('login');
 });
 Route::post('/login',[UserController::class,'login']);
-Route::get('/',[ProductController::class,'index']);
+Route::get('/',[ProductController::class,'index']);	
 //Route for product detail page
 Route::get('detail/{id}',[ProductController::class,'detail']);
 //Search Product
 Route::get('search',[ProductController::class,'search']);
+//Add To Cart
+Route::post('/add_to_cart',[ProductController::class,'addToCart']);
+//Logout 
+Route::get('/logout',[ProductController::class,'logout']);
+//List Cart Items
+Route::get('/cartList',[ProductController::class,'cartList']);
 
