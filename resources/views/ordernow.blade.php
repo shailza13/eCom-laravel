@@ -22,15 +22,16 @@
     </tr>
   </tbody>
 </table>
-<form>
+<form method="post" action="{{url('orderPlace')}}">
+  @csrf
   <div class="form-group">
-    <textarea class="form-control"></textarea>
+    <textarea placeholder="Enter Your Address" name="address" class="form-control"></textarea>
   </div>
   <div class="form-group">
     <label for="">Payment Method</label>
     <p><input type="radio" name="payment"><span>Online Payment</span></p>
     <p><input type="radio" name="payment"><span>EMI</span></p> 
-    <p><input type="radio" name="payment"><span>Pay On Delivery</span></p>    
+    <p><input type="radio" value="cash" name="payment"><span>Pay On Delivery</span></p>    
   </div>
   <button type="submit" class="btn btn-primary">Order Now</button>
 </form>
